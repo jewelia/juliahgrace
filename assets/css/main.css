@@ -1,0 +1,47 @@
+  body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .julia{
+    font-family: 'Lato', serif;
+    font-size: 48px;
+    color: #ad1d28;
+  }
+
+  .sub-heading{
+    font-family: 'Lato', serif;
+    color: #126E65;
+  }
+
+  .links{
+    text-decoration: none;
+  }
+
+  .container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  .jumbotron {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  .marketing {
+    margin: 20px 0;
+  }
+  .marketing h1 {
+    margin: 5px 0;
+    text-align: center;
+  }
+  .marketing p + h4 {
+    margin-top: 28px;
+  }
