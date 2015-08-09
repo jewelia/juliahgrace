@@ -147,7 +147,7 @@
       <div class="row-fluid marketing">
         <h2 id="load-up-the-firmware" class="sub-heading">Load Up the Firmware</h2>
         <p><strong>1</strong> To program the Arduino using the IDE you must use the Processing program language. Although this isn't necessarily that hard, all the awesome 3rd party libraries (e.g. Twilio) don't have Processing bindings. So let's use something a little more fun: Python!</p>
-        <p><strong>2</strong> There are many different ways to talk to your Arduino using Python. The first step is to install the StandardFirmata on your Arduino (<a href="http://firmata.org/wiki/Main_Page" target="_blank">Firmatta</a> is a protocol used to by a computer to communicate with the microcontroller).</p>
+        <p><strong>2</strong> There are many different ways to talk to your Arduino using Python. The first step is to install the StandardFirmata on your Arduino (<a href="http://firmata.org/wiki/Main_Page" target="_blank">Firmata</a> is a protocol used to by a computer to communicate with the microcontroller).</p>
         <ul>
             <li>Plug in your Arduino via USB</li>
             <li>Open the Arduino IDE, select: File > Examples > Firmata > StandardFirmata</li>
@@ -158,9 +158,9 @@
             <li>You should see a success message at the bottom of the IDE ("Done uploading")</li>
         </ul>
         <p><img src="http://farm8.staticflickr.com/7370/10042841596_6ce7071ed2.jpg">
-        <p>Once you have the Firmatta installed you can talk to the Arduino using <a href="https://github.com/tino/pyFirmata" target="_blank">pyFirmatta</a> or any library built on top of pyFirmatta.</p>
-        <p>In the following example we are going to use a library called <a href="https://github.com/theycallmeswift/BreakfastSerial" target="_blank">BreakfastSerial</a> that is built on top of pyFirmatta (meaning is abstracts away some of the complexities of pyFirmatta, much like Python abstracts away complexities of C).</p>
-        <p>BreakfastSerial is a great beginner library and can get you going fast. However, if you want to do more complex things you will likely need to drop down to the pyFirmatta layer.</p>
+        <p>Once you have the Firmata installed you can talk to the Arduino using <a href="https://github.com/tino/pyFirmata" target="_blank">pyFirmata</a> or any library built on top of pyFirmata.</p>
+        <p>In the following example we are going to use a library called <a href="https://github.com/theycallmeswift/BreakfastSerial" target="_blank">BreakfastSerial</a> that is built on top of pyFirmata (meaning is abstracts away some of the complexities of pyFirmata, much like Python abstracts away complexities of C).</p>
+        <p>BreakfastSerial is a great beginner library and can get you going fast. However, if you want to do more complex things you will likely need to drop down to the pyFirmata layer.</p>
         <p>For example, BreakfastSerial does a great job of abstracting away a lot of the physics of circuits and you don't have to worry about analog vs digital pins on the Arduino, but as you gain experience I have found it's fun to dig deeper and understand more of what's going on "behind the scenes".
 
       </div>
@@ -189,7 +189,7 @@
         <p>If your resistors don't have a handy label on them you can still tell the resistance from the colored markings on the resistor itself. Here is a <a href="http://en.wikipedia.org/wiki/Electronic_color_code#Resistor_color-coding" target="_blank">guide to decoding the colored markings.</a>
         <p><strong>2</strong> I have written some code that we are going to run on your Arduino. <a href="https://github.com/jewelia/txtduino" target="_blank">Fork my txtduino repository on GitHub.</a></p>
         <p><strong>3</strong> My code assumes you have LED hooked up to pin #13 and the button hooked up to pin #2. If you have used different pins, you will need to modify the code.
-        <p><strong>4</strong> Ensure you install the requirements (txtduino depends on both pyFirmatta and BreakfastSerial, so both those libraries will be installed when you install the requirements):</p><pre>$ pip install -r requirements</pre>
+        <p><strong>4</strong> Ensure you install the requirements (txtduino depends on both pyFirmata and BreakfastSerial, so both those libraries will be installed when you install the requirements):</p><pre>$ pip install -r requirements</pre>
         <p><strong>5</strong> Sign up for a <a href="https://www.twilio.com/try-twilio" target="_blank">free Twilio account.</a></p>
         <p><strong>6</strong> In <a href="https://github.com/jewelia/txtduino/blob/master/settings.py" target="_blank">settings.py</a> you’ll see several variables you need to fill in with information from your Twilio account (your access key, phone number, etc.):
 <pre>twilio_account_sid = 'PUT YOUR TWILIO ACCT SID HERE'
